@@ -47,7 +47,7 @@ export default function About() {
               <span>+51-972-420-425</span>
             </div>
             <a
-              href="https://github.com/KFig21/portfolio_2021"
+              href="https://github.com/Joseangeltelecom/portafolio"
               target="_blank"
               rel="noopener noreferrer"
               className="item-container"
@@ -94,7 +94,7 @@ export default function About() {
                 <span>joseangeltelecom@gmail.com</span>
               </div>
               <a
-                href="https://github.com/KFig21"
+                href="https://github.com/joseangeltelecom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="item-container"
@@ -107,7 +107,7 @@ export default function About() {
                 <span>(+51)-972-420-425</span>
               </div>
               <a
-                href="https://github.com/KFig21/portfolio_2021"
+                href="https://joseangeltelecom.github.io/portafolio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="item-container"

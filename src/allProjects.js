@@ -457,11 +457,7 @@ export const languages = [
     icon: htmlIcon,
     exp: "2",
   },
-  {
-    name: "SQL",
-    icon: sqlIcon,
-    exp: "1",
-  },
+
   ,
   {
     name: "Python",
@@ -489,7 +485,7 @@ export const techData = [
   {
     name: "React",
     icon: reactIcon,
-    exp: "1",
+    exp: "2",
   },
   {
     name: "React-spring",
@@ -507,7 +503,7 @@ export const otherSkills = [
   {
     name: "Excel",
     icon: excelIcon,
-    exp: "15",
+    exp: "5",
   },
   {
     name: "Firebase",
