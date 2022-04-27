@@ -1,0 +1,465 @@
+$navbarColor: rgba(33, 38, 42, 0.8);
+$primaryColor: #202020;
+$primaryColorFaded: #676a73;
+$secondaryColor: #1a1a1a;
+$menuActiveBackgroundColor: rgba(0, 0, 0, 0.4);
+$mobileMenuActiveBackgroundColor: rgba(0, 0, 0, 0.88);
+$accentColor: #23c5d9;
+$accentColorFaded: rgba(35, 194, 215, 0.6);
+$textColor: rgb(247, 247, 247);
+$textHeaderColor: rgb(247, 247, 247);
+$editorPrimary: #1f2329;
+$editorSecondary: #2c3138;
+$editorBorder: rgb(146, 146, 146);
+$navbarHeight: 70px;
+$navbarHeightMobile: 60px;
+$techContainerBackgroundColor: rgba(123, 128, 145, 0.3);
+$scrollThumbColor: rgba(115, 115, 115, 0.7);
+$scollTrackColor: transparent;
+$skillsContainerBackgroundColor: #24272c;
+$testColor: #9b4cfb;
+
+$containerBorderRadius: 10px;
+
+$width: 768px;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 0.2px;
+  max-height: 100vh;
+}
+
+@mixin mobile {
+  @media (min-height: 421px) {
+    @media (max-width: #{$width}) {
+      @content;
+    }
+  }
+}
+
+@mixin smallDesktop {
+  @media (min-height: 1px) {
+    @media (max-width: 1300px) and (min-width: 820px) {
+      @content;
+    }
+  }
+}
+
+@mixin mobileKeyboard {
+  @media (max-height: 500px) {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+}
+
+@mixin mobileHorizontal {
+  @media (max-height: 420px) {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }
+}
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primaryColorFaded;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondaryColor;
+}
+
+::-webkit-resizer {
+  border-right: 2px solid $primaryColorFaded;
+  border-bottom: 2px solid $primaryColorFaded;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    transparent 50%,
+    $primaryColorFaded 51%,
+    $primaryColorFaded 100%
+  );
+}
+
+// tech colors
+// react
+$reactColor: #61b8fb;
+.react-color-bg {
+  background-color: $reactColor;
+}
+.react-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $reactColor;
+    color: black;
+  }
+}
+.react-color-text {
+  color: $reactColor;
+}
+
+// ant-design
+$antdesign: #0d6dff;
+.antdesign-color-bg {
+  background-color: $antdesign;
+}
+.antdesign-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $antdesign;
+    color: black;
+  }
+}
+.antdesign-color-text {
+  color: $antdesign;
+}
+
+// react-spring
+$reactspring: #ea567c;
+.reactspring-color-bg {
+  background-color: #353444;
+}
+.reactspring-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $reactspring;
+    color: black;
+  }
+}
+.reactspring-color-text {
+  color: $reactspring;
+}
+
+// bootstrap
+$bootstrapColor: #8323eb;
+.bootstrap-color-bg {
+  background-color: $bootstrapColor;
+}
+.boostrap-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $bootstrapColor;
+    color: black;
+  }
+}
+.bootstrap-color-text {
+  color: $bootstrapColor;
+}
+
+// firebase
+$firebaseColor: #f79b00;
+.firebase-color-bg {
+  background-color: $firebaseColor;
+}
+.firebase-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $firebaseColor;
+    color: black;
+  }
+}
+.firebase-color-text {
+  color: $firebaseColor;
+}
+
+// javascript
+$javascriptColor: #f7cf00;
+.javascript-color-bg {
+  background-color: $javascriptColor;
+}
+.javascript-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $javascriptColor;
+    color: black;
+  }
+}
+.javascript-color-text {
+  color: $javascriptColor;
+}
+
+// express
+$expressColor: #f7cf00;
+.express-color-bg {
+  background-color: $expressColor;
+}
+.express-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $expressColor;
+    color: black;
+  }
+}
+.express-color-text {
+  color: $expressColor;
+}
+
+// css
+$cssColor: #1c86c4;
+.css-color-bg {
+  background-color: $cssColor;
+}
+.css-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $cssColor;
+    color: black;
+  }
+}
+.css-color-text {
+  color: $cssColor;
+}
+
+// html
+$htmlColor: #f16529;
+.html-color-bg {
+  background-color: $htmlColor;
+}
+.html-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $htmlColor;
+    color: black;
+  }
+}
+.html-color-text {
+  color: $htmlColor;
+}
+
+// sass
+$sassColor: #cf649a;
+.sass-color-bg {
+  background-color: $sassColor;
+}
+.sass-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $sassColor;
+    color: black;
+  }
+}
+.sass-color-text {
+  color: $sassColor;
+}
+
+// sql
+$sqlColor: #2887db;
+.sql-color-bg {
+  background-color: $sqlColor;
+}
+.sql-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $sqlColor;
+    color: black;
+  }
+}
+.sql-color-text {
+  color: $sqlColor;
+}
+
+// php
+$phpColor: #7377ad;
+.php-color-bg {
+  background-color: $phpColor;
+}
+.php-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $phpColor;
+    color: black;
+  }
+}
+.php-color-text {
+  color: $phpColor;
+}
+
+// ruby
+$rubyColor: #eb3d43;
+.ruby-color-bg {
+  background-color: $rubyColor;
+}
+.ruby-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $rubyColor;
+    color: black;
+  }
+}
+.ruby-color-text {
+  color: $rubyColor;
+}
+
+// python
+$pythonColor: #ebda3d;
+.python-color-bg {
+  background-color: $pythonColor;
+}
+.python-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $pythonColor;
+    color: black;
+  }
+}
+.python-color-text {
+  color: $pythonColor;
+}
+
+// node
+$nodeColor: #41b350;
+.node-color-bg {
+  background-color: $nodeColor;
+}
+.node-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $nodeColor;
+    color: black;
+  }
+}
+.node-color-text {
+  color: $nodeColor;
+}
+
+// mongo
+$mongoColor: #41b350;
+.mongo-color-bg {
+  background-color: $mongoColor;
+}
+.mongo-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $mongoColor;
+    color: black;
+  }
+}
+.mongo-color-text {
+  color: $mongoColor;
+}
+
+// photoshop
+$photoshopColor: #39a9eb;
+.photoshop-color-bg {
+  background-color: $photoshopColor;
+}
+.photoshop-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $photoshopColor;
+    color: black;
+  }
+}
+.photoshop-color-text {
+  color: $photoshopColor;
+}
+
+// illustrator
+$illustratorColor: #ff9b00;
+.illustrator-color-bg {
+  background-color: $illustratorColor;
+}
+.illustrator-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $illustratorColor;
+    color: black;
+  }
+}
+.illustrator-color-text {
+  color: $illustratorColor;
+}
+
+// excel
+$excelColor: #1a8d56;
+.excel-color-bg {
+  background-color: $excelColor;
+}
+.excel-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $excelColor;
+    color: black;
+  }
+}
+.excel-color-text {
+  color: $excelColor;
+}
+
+// mysql
+$mysqlColor: #1f7aa5;
+.mysql-color-bg {
+  background-color: $mysqlColor;
+}
+.mysql-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $mysqlColor;
+    color: black;
+  }
+}
+.mysql-color-text {
+  color: $mysqlColor;
+}
+
+// git
+$gitColor: #f05033;
+.git-color-bg {
+  background-color: $gitColor;
+}
+.git-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $gitColor;
+    color: black;
+  }
+}
+.git-color-text {
+  color: $gitColor;
+}
+
+// pug
+$pugColor: crimson;
+.pug-color-bg {
+  background-color: $pugColor;
+}
+.pug-color-bg-hover {
+  background-color: $techContainerBackgroundColor;
+
+  &:hover {
+    background-color: $pugColor;
+    color: black;
+  }
+}
+.pug-color-text {
+  color: $pugColor;
+}

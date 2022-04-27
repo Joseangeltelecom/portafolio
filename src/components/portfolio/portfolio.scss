@@ -1,0 +1,115 @@
+@import "../../global.scss";
+
+.portfolio {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+
+  @include mobile {
+    height: 100%;
+    padding-bottom: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 1px;
+  }
+
+  @include mobileHorizontal {
+    padding-bottom: 120px;
+    justify-content: center;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+    @include mobile {
+      margin-top: unset;
+      margin-left: unset;
+    }
+
+    @include mobileHorizontal {
+      margin-top: unset;
+      margin-left: unset;
+    }
+
+    a {
+      font-family: Poppins, sans-serif;
+      color: $textHeaderColor;
+      font-weight: 500;
+    }
+
+    span {
+      color: $accentColor;
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      color: $textColor;
+      overflow: visible;
+
+      @include mobile {
+        font-size: 2.5em;
+      }
+
+      @include mobileHorizontal {
+        font-size: 2em;
+      }
+    }
+  }
+
+  ul {
+    margin: 23px 0;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+
+    @include mobile {
+      margin: 15px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobileHorizontal {
+      margin: 5px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .scroller {
+    width: 100vw;
+    white-space: nowrap;
+    position: relative;
+    transition: all 1s ease-out;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      width: 100vw;
+      scroll-snap-align: start;
+    }
+
+    .pages {
+      width: 100vw;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  }
+}

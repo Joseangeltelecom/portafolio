@@ -1,0 +1,509 @@
+@import "../../global.scss";
+
+.contact {
+  background-image: linear-gradient(
+    132.6deg,
+    rgb(55, 128, 206) 23.3%,
+    rgba(37, 216, 211, 1) 84.7%
+  );
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200vh;
+
+  @include mobile {
+    height: calc(100% - 400px);
+    padding-bottom: 60px;
+    margin-top: 850px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 4px 18px;
+    background-color: $primaryColor;
+    // box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
+
+    @include mobile {
+      flex-direction: column;
+      max-width: 344px;
+      margin-top: 500px;
+      height: 200vh;
+    }
+
+    @include mobileHorizontal {
+      max-height: 80vh;
+      max-width: 500px;
+    }
+
+    @include mobileKeyboard {
+      flex-direction: column;
+      max-width: 344px;
+    }
+
+    .contact-container-left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      background-color: $editorSecondary;
+
+      @include mobile {
+        width: 100%;
+        margin-top: 0px;
+      }
+      @include mobileKeyboard {
+        width: 100%;
+      }
+      @include mobileHorizontal {
+        padding: 0px 15px;
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-size: 28px;
+        font-weight: 400;
+        color: $textColor;
+        text-align: left;
+        width: 300px;
+        margin: auto;
+        overflow: visible;
+        font-family: Poppins, sans-serif;
+
+        @include mobile {
+          padding-top: 15px;
+          font-size: 25px;
+        }
+        @include mobileKeyboard {
+          padding-top: 15px;
+          font-size: 25px;
+        }
+        @include mobileHorizontal {
+          padding-top: 15px;
+          font-size: 25px;
+          width: 100%;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+        margin: auto;
+
+        @include mobileHorizontal {
+          width: 100%;
+        }
+
+        input {
+          width: inherit;
+          height: 30px;
+          background-color: transparent;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: solid 1px;
+          border-color: gray;
+          padding: 12px 0px 4px 0px;
+          outline: none;
+          color: white;
+          font-size: 16px;
+          transition: border-color 0.22s ease-in-out;
+
+          &:focus {
+            border-color: $accentColor;
+          }
+
+          @include mobile {
+            padding: 11px 0px 4px 0px;
+          }
+          @include mobileKeyboard {
+            padding: 11px 0px 4px 0px;
+          }
+        }
+
+        textarea {
+          width: inherit;
+          height: 130px;
+          min-height: 30px;
+          max-height: 250px;
+          background-color: transparent;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: solid 1px gray;
+          padding: 12px 0px 4px 0px;
+          outline: none;
+          color: white;
+          font-size: 16px;
+          transition: border-color 0.22s ease-in-out;
+          resize: vertical;
+
+          &:focus {
+            border-color: $accentColor;
+          }
+
+          @include mobile {
+            height: 80px;
+          }
+          @include mobileKeyboard {
+            height: 80px;
+          }
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus {
+          -webkit-text-fill-color: $textColor !important;
+          -webkit-box-shadow: 0 0 0 30px $editorSecondary inset !important;
+        }
+
+        button {
+          width: 120px;
+          color: $textColor;
+          border: none;
+          border-radius: 3px;
+          font-size: 16px;
+          padding: 12px 0px;
+          margin: 15px 0px;
+          cursor: pointer;
+          overflow: visible;
+
+          @include mobile {
+            padding: 9px 0px;
+            margin: 10px 0px;
+          }
+          @include mobileKeyboard {
+            padding: 9px 0px;
+            margin: 10px 0px;
+          }
+
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            -webkit-animation: animated-logo 2.2s ease infinite;
+            -moz-animation: animated-logo 2.2s ease infinite;
+            animation: animated-logo 2.2s ease infinite;
+            background-size: 300% 300%;
+          }
+        }
+
+        span {
+          color: $accentColor;
+        }
+      }
+    }
+
+    .contact-container-right {
+      width: 50%;
+      overflow: visible;
+
+      @include mobile {
+        width: 100%;
+      }
+      @include mobileKeyboard {
+        width: 100%;
+      }
+
+      .right-content {
+        width: 300px;
+        margin: auto;
+        color: $textColor;
+
+        @include mobileHorizontal {
+          width: unset;
+          padding: 15px 15px;
+        }
+
+        h3 {
+          padding-top: 28px;
+          font-size: 20px;
+          font-weight: 400;
+          text-align: left;
+          font-family: Poppins, sans-serif;
+
+          @include mobile {
+            padding-top: 16px;
+          }
+          @include mobileHorizontal {
+            width: 100%;
+            padding-top: 5px;
+          }
+          @include mobileKeyboard {
+            padding-top: 16px;
+          }
+        }
+
+        p {
+          color: gray;
+          padding-top: 15px;
+          line-height: 23px;
+
+          @include mobile {
+            padding-top: 8px;
+          }
+          @include mobileKeyboard {
+            padding-top: 8px;
+          }
+          @include mobileHorizontal {
+            width: 100%;
+            font-size: 14px;
+            padding-top: 5px;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+
+          @include mobile {
+            flex-direction: row;
+            justify-content: space-around;
+          }
+          @include mobileKeyboard {
+            flex-direction: row;
+            justify-content: space-around;
+          }
+
+          .item-container {
+            display: flex;
+            background-color: $primaryColor;
+            padding: 8px 0px;
+            text-decoration: none;
+            align-items: center;
+            justify-self: start;
+            transition: all 0.2s linear;
+            height: 50px;
+
+            @include mobile {
+              padding: 6px 0px;
+            }
+            @include mobileKeyboard {
+              padding: 6px 0px;
+            }
+            @include mobileHorizontal {
+              padding: 0px 0px;
+            }
+
+            &:hover {
+              .contact-icon-container {
+                // background-color: $accentColor;
+                color: $primaryColor;
+                fill: $primaryColor;
+              }
+              .item-details {
+                .item-span {
+                  color: $accentColor;
+                }
+              }
+              #leetcode path {
+                transition: fill 0.2s ease;
+                fill: $primaryColor;
+              }
+            }
+
+            .contact-icon-container {
+              background-color: rgba(100, 100, 100, 0.2);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
+              height: 42px;
+              width: 42px;
+              margin-right: 10px;
+              color: $textColor;
+              fill: $textColor;
+              transition: background-color 0.2s ease, color 0.05s ease,
+                fill 0.05s ease;
+
+              @include mobile {
+                margin-right: 0px;
+                transition: unset;
+              }
+              @include mobileKeyboard {
+                margin-right: 0px;
+                transition: unset;
+              }
+              @include mobileHorizontal {
+                height: 30px;
+                width: 30px;
+                min-height: 30px;
+                min-width: 30px;
+                overflow: hidden;
+                transition: unset;
+              }
+
+              .icon {
+                @include mobileHorizontal {
+                  height: 20px;
+                  width: 20px;
+                }
+              }
+
+              .leetcode-icon {
+                padding: 6px 7px 8px 7px;
+                transition: all 0.25s ease;
+
+                @include mobile {
+                  transition: unset;
+                }
+                @include mobileHorizontal {
+                  height: 20px;
+                  width: 20px;
+                  transition: unset;
+                }
+              }
+            }
+
+            .active {
+              @include mobile {
+                // background-color: $accentColor;
+                color: $primaryColor;
+                fill: $primaryColor;
+                transition: unset;
+              }
+              @include mobileKeyboard {
+                background-color: $accentColor;
+                color: $primaryColor;
+                fill: $primaryColor;
+                transition: unset;
+              }
+            }
+
+            .item-details {
+              display: flex;
+
+              @include mobile {
+                display: none;
+              }
+
+              @include mobileKeyboard {
+                display: none;
+              }
+
+              .item-span-title {
+                color: white;
+
+                @include mobileHorizontal {
+                  display: none;
+                }
+              }
+
+              .item-span {
+                color: gray;
+                padding-left: 5px;
+                transition: all 0.2s linear;
+                text-decoration: none;
+                cursor: pointer;
+                overflow: visible;
+              }
+            }
+          }
+        }
+
+        .mobile-info-container {
+          display: none;
+          text-align: center;
+
+          @include mobile {
+            display: block;
+            background-color: $primaryColorFaded;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 3px 9px;
+            margin-top: 3px;
+            margin-bottom: 15px;
+          }
+          @include mobileKeyboard {
+            display: block;
+            background-color: $primaryColorFaded;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 3px 9px;
+            margin-top: 3px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .message-container {
+    margin-top: 0px;
+    height: 0px;
+    transition: all 0.3s ease;
+    overflow-y: hidden;
+
+    &.active {
+      margin-top: 30px;
+      height: 60px;
+    }
+
+    .message {
+      background-color: $editorPrimary;
+      color: $textColor;
+      font-size: 20px;
+      padding: 15px 30px;
+      border-radius: 2px 12px 2px 12px;
+      font-family: Poppins, sans-serif;
+      background: linear-gradient(
+        130deg,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        #565960,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary,
+        $editorPrimary
+      );
+      -webkit-animation: animated-logo 2.7s ease infinite;
+      -moz-animation: animated-logo 2.7s ease infinite;
+      animation: animated-logo 2.7s ease infinite;
+      background-size: 300% 300%;
+    }
+  }
+}
+
+@-webkit-keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@-moz-keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@keyframes animated-logo {
+  0% {
+    background-position: 96% 100%;
+  }
+
+  100% {
+    background-position: 5% 0%;
+  }
+}
