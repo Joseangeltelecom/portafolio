@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.849bdadb.css",
-    "main.js": "/portafolio/static/js/main.e737ed2f.js",
+    "main.css": "/portafolio/static/css/main.834f51e0.css",
+    "main.js": "/portafolio/static/js/main.15936b08.js",
     "static/media/InstaCrackImg-18.gif": "/portafolio/static/media/InstaCrackImg-18.b8f9220c5c67df267e6b.gif",
     "static/media/InstaCrackImg-19.gif": "/portafolio/static/media/InstaCrackImg-19.0404466cbb1619b05a03.gif",
     "static/media/NotesApp-4.gif": "/portafolio/static/media/NotesApp-4.3f1a6bb7b033c491ddc9.gif",
@@ -62,7 +62,6 @@
     "static/media/cvMakerImg-3.png": "/portafolio/static/media/cvMakerImg-3.1ca7548bc81ee9152ac2.png",
     "static/media/weatherAppImg-2.png": "/portafolio/static/media/weatherAppImg-2.d68dadbbb8cb2a12bcbe.png",
     "static/media/weatherAppImg-1.png": "/portafolio/static/media/weatherAppImg-1.b9c06aeb7b89cef0879f.png",
-    "static/media/logo1TransparentSec.png": "/portafolio/static/media/logo1TransparentSec.d4b14b12cc295b8b36c6.png",
     "static/media/InstaCrackImg-2.png": "/portafolio/static/media/InstaCrackImg-2.3b02be5ecb7be2d6f328.png",
     "static/media/RadomQuoteMachineImg-2.png": "/portafolio/static/media/RadomQuoteMachineImg-2.d75be5112500f496c622.png",
     "static/media/RadomQuoteMachineImg-3.png": "/portafolio/static/media/RadomQuoteMachineImg-3.e5318781e9f329bd342f.png",
@@ -92,12 +91,13 @@
     "static/media/react-spring.svg": "/portafolio/static/media/react-spring.0e8ba6f4b72307ee5353b129374af9bf.svg",
     "static/media/node.png": "/portafolio/static/media/node.e66c8001f46a48026b2d.png",
     "static/media/javascript.png": "/portafolio/static/media/javascript.4d2282365d68a133d123.png",
+    "static/media/logo1TransparentSec.svg": "/portafolio/static/media/logo1TransparentSec.ff01b4290493256c9cd4daedbb2139a0.svg",
     "index.html": "/portafolio/index.html",
-    "main.849bdadb.css.map": "/portafolio/static/css/main.849bdadb.css.map",
-    "main.e737ed2f.js.map": "/portafolio/static/js/main.e737ed2f.js.map"
+    "main.834f51e0.css.map": "/portafolio/static/css/main.834f51e0.css.map",
+    "main.15936b08.js.map": "/portafolio/static/js/main.15936b08.js.map"
   },
   "entrypoints": [
-    "static/css/main.849bdadb.css",
-    "static/js/main.e737ed2f.js"
+    "static/css/main.834f51e0.css",
+    "static/js/main.15936b08.js"
   ]
 }
