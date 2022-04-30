@@ -50,7 +50,7 @@ li {
     .active {
       display: inline;
       position: relative;
-      font-weight: 600;
+      font-weight: 500;
       overflow: hidden;
 
       @include mobileHorizontal {

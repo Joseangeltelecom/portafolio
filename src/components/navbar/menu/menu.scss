@@ -35,7 +35,7 @@
   }
 
   @include smallDesktop {
-    max-width: 80px;
+    max-width: 120px;
   }
 
   @media (max-width: 900px) {
@@ -56,13 +56,18 @@
 
     .navbar-svg {
       position: absolute;
-      max-height: 50px;
-      max-width: 50px;
-      top: 50px;
+      max-height: 130px;
+      max-width: 130px;
+      top: 20px;
       background-color: $accentColor;
-      border-radius: 100px;
+      border-radius: 50%;
       .navbar-svg-g {
-        fill: rgba(33, 34, 37, 0.9);
+        fill: #232528;
+      }
+
+      @include smallDesktop {
+        max-height: 100px;
+        max-width: 100px;
       }
 
       @include mobileHorizontal {

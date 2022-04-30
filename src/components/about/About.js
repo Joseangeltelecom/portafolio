@@ -3,7 +3,7 @@ import "./about.scss";
 import { Person, Mail, GitHub, Code } from "@mui/icons-material";
 import SC from "../../themes/styledComponents";
 // imgs
-import logo from "../../assets/logo/logo1TransparentSec.png";
+import logo from "../../assets/logo/logo1TransparentSec.svg";
 
 export default function About() {
   return (
